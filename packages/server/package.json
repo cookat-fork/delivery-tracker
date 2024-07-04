@@ -8,7 +8,8 @@
     "build": "tsc -p .",
     "build-with-deps": "pnpm --filter '@delivery-tracker/api' --filter '@delivery-tracker/core' build-with-deps && pnpm build",
     "start": "node dist/index.js",
-    "dev": "node-dev src/index.ts"
+    "dev": "node-dev src/index.ts",
+    "run": "pnpm install && pnpm build-with-deps"
   },
   "dependencies": {
     "@apollo/server": "^4.7.0",
